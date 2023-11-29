@@ -82,8 +82,14 @@ export default function Blog() {
            </div>
            <div class="">
              <h2 style={{display:'flex',gap:'20px',alignItems:'flex-end',justifyContent: 'space-between'}}>
-               <span>{prog.anno}<br></br>{prog.info2}<br></br>{prog.info3}</span>
-               <span>{prog.info4}<br></br>{prog.info5}<br></br>{prog.info6}</span>
+               <span>
+               {prog.anno && <>{prog.anno}<br /></>}
+      {prog.info2 && <>{prog.info2}<br /></>}
+      {prog.info3 && <>{prog.info3}<br /></>}
+      {prog.info4 && <>{prog.info4}<br /></>}
+      {prog.info5 && <>{prog.info5}<br /></>}
+      {prog.info6 && <>{prog.info6}<br /></>}
+      </span>
              </h2>
            </div>
          </div>
